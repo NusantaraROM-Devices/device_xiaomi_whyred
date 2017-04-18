@@ -23,7 +23,7 @@
 #
 
 # Inherit from sdm660-common
--include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/whyred
 
@@ -60,4 +60,4 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
 TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
 
 # Inherit the proprietary files
--include vendor/xiaomi/whyred/BoardConfigVendor.mk
+include vendor/xiaomi/whyred/BoardConfigVendor.mk
