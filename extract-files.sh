@@ -65,17 +65,9 @@ setup_vendor "$DEVICE" "$VENDOR" "$HAVOC_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" \
     "${KANG}" --section "${SECTION}"
-extract "$MY_DIR"/proprietary-files-twrp.txt "$SRC" \
-    "${KANG}" --section "${SECTION}"
 
-TWRP_QSEECOMD="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/recovery/root/sbin/qseecomd
-TWRP_GATEKEEPER="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/recovery/root/sbin/android.hardware.gatekeeper@1.0-service
-TWRP_KEYMASTER="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/recovery/root/sbin/android.hardware.keymaster@3.0-service
 GOODIX="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libgf_ca.so
 
-sed -i "s|/system/bin/linker64|/sbin/linker64\x0\x0\x0\x0\x0\x0|g" "$TWRP_QSEECOMD"
-sed -i "s|/system/bin/linker64|/sbin/linker64\x0\x0\x0\x0\x0\x0|g" "$TWRP_GATEKEEPER"
-sed -i "s|/system/bin/linker64|/sbin/linker64\x0\x0\x0\x0\x0\x0|g" "$TWRP_KEYMASTER"
 sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" $GOODIX
 
 BLOB_ROOT="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
