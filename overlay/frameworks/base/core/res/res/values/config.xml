@@ -582,4 +582,12 @@
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
 </resources>
