@@ -737,6 +737,8 @@ vendor/lib64/libSubSystemShutdown.so|2fa4c60e355ce0e77994f2108706beb9e6cdcbdd
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-normal.conf
+vendor/etc/thermal-engine-sgame.conf
+vendor/etc/thermal-engine-pubgmhd.conf
 
 # Thermal - from jasmine V11.0.11.0.QDIMIXM
 vendor/bin/thermal-engine|459c3fb5ab99ac95cff15387358c1d0e239a5735
