@@ -28,6 +28,12 @@
         "repository":   "PixelExperience-Devices/vendor_MiuiCamera",
         "target_path":  "vendor/MiuiCamera",
         "revision":     "ten-whyred"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Jhonse02/android_vendor_aeonax_ANXCamera",
+        "target_path":  "vendor/aeonax/ANXCamera",
+        "revision":     "master"
     }
 
 ]
