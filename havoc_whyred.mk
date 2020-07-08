@@ -45,13 +45,18 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="whyred" \
-    PRODUCT_NAME="whyred" \
-    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
+    PRODUCT_NAME="whyred"
 
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200705.002 6506677 release-keys" \
+
+#Build FP to be picked by both system and vendor
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-07-05
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 TARGET_VENDOR := Xiaomi
 
