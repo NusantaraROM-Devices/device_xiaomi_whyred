@@ -30,9 +30,6 @@ DEVICE_PATH := device/xiaomi/whyred
 # Assert
 TARGET_OTA_ASSERT_DEVICE := whyred
 
-# ANXCamera
--include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
