@@ -25,9 +25,9 @@
     },
     {
         "remote":       "github",
-        "repository":   "PixelExperience-Devices/vendor_MiuiCamera",
+        "repository":   "Jhonse02/vendor_MiuiCamera",
         "target_path":  "vendor/MiuiCamera",
-        "revision":     "ten-whyred"
+        "revision":     "10.x"
     }
 
 ]
