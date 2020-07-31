@@ -68,6 +68,9 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" \
 
 GOODIX="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libgf_ca.so
 
+extract "$MY_DIR"/proprietary-camera-files.txt "$SRC" \
+    "${KANG}" --section "${SECTION}"
+
 sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" $GOODIX
 
 BLOB_ROOT="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
