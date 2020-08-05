@@ -19,8 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Inherit some common NusantaraROM stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
+NAD_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
@@ -30,12 +37,9 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Bootanimation world
-TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 
-PRODUCT_NAME := aosp_whyred
+PRODUCT_NAME := nad_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi

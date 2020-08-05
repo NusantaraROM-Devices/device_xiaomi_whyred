@@ -64,12 +64,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := whyred_defconfig
+TARGET_KERNEL_CONFIG := whyred-newcam_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-
-ifneq ($(CARBON_BUILD),)
-TARGET_KERNEL_CLANG_VERSION := r377782d
-endif
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -217,6 +213,7 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
