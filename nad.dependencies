@@ -1,27 +1,27 @@
 [
     {
-        "remote":       "github",
+        "remote":       "ghpriv",
         "repository":   "MocaRafee/aandroid_device_xiaomi_sdm660-common",
         "target_path":  "device/xiaomi/sdm660-common",
-        "revision":     "nad_10"
+        "branch":     "nad_10"
     },
     {
         "remote":       "github",
         "repository":   "theradcolor/android_kernel_xiaomi_whyred",
         "target_path":  "kernel/xiaomi/sdm660",
-        "revision":     "kernel-eas"
+        "branch":     "kernel-eas"
     },
     {
-        "remote":       "github",
+        "remote":       "ghpriv",
         "repository":   "MocaRafee/proprietary_vendor_xiaomi_",
         "target_path":  "vendor/xiaomi",
-	    "revision":	"ten"
+	    "branch":	"ten"
     },
     {
         "remote":       "github",
         "repository":   "MocaRafee/vendor_MiuiCamera",
         "target_path":  "vendor/MiuiCamera",
-        "revision":     "10.x"
+        "branch":     "10.x"
     },
     {
     	"remote": "priv",
