@@ -29,6 +29,12 @@
         "target_path"	: "vendor/MiuiCamera",
         "branch"	    : "10.x"
     },
+	{
+		"remote"		: "priv",
+		"repository"	: "android_packages_apps_NusantaraParts",
+		"target_path"	: "packages/apps/NusantaraParts",
+		"branch"		: "4.4-NoDirac"
+	},
     {
     	"remote"	    : "priv",
     	"repository"	: "android_packages_apps_NusantaraPapers",
