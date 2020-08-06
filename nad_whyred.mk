@@ -32,6 +32,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
+# Some bloatware
+$(call inherit-product-if-exists, device/bloatware/config.mk)
+
 # AOT Preload
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
