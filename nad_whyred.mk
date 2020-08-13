@@ -31,8 +31,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Wallpapers
 PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
-
+    NusantaraPapers
+	
 # Some bloatware
 $(call inherit-product-if-exists, device/bloatware/config.mk)
 

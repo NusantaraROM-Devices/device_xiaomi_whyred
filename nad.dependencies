@@ -25,6 +25,12 @@
     },
     {
         "remote"	    : "github",
+        "repository"	: "theradcolor/aarch64-linux-gnu",
+        "target_path"	: "compiler/gcc-10.1.0",
+	    "branch"	    : "aarch64-linux-gnu-10.1.0"
+    },
+    {
+        "remote"	    : "github",
         "repository"	: "MocaRafee/vendor_MiuiCamera",
         "target_path"	: "vendor/MiuiCamera",
         "branch"	    : "10.x"
