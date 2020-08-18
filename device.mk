@@ -347,6 +347,9 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# Offline Charger
+	USE_PIXEL_CHARGING := true
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \

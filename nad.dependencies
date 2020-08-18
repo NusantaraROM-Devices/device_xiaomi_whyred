@@ -1,21 +1,26 @@
 [
     {
-        "remote":       "priv",
-        "repository":   "aandroid_device_xiaomi_sdm660-common",
-        "target_path":  "device/xiaomi/sdm660-common",
-        "branch":     "meme"
+        "remote"		: "priv",
+        "repository"	: "aandroid_device_xiaomi_sdm660-common",
+        "target_path"	: "device/xiaomi/sdm660-common",
+        "branch"		: "meme"
+    },
+    	"remote"	    : "github",
+    	"repository"	: "MocaRafee/device_bloatware",
+    	"target_path"	: "device/bloatware",
+    	"branch"	    : "nad_10_2"
     },
     {
-        "remote":       "github",
-        "repository":   "theradcolor/android_kernel_xiaomi_whyred",
-        "target_path":  "kernel/xiaomi/whyred",
-        "branch":     "kernel-eas"
+        "remote"		: "github",
+        "repository"	: "theradcolor/android_kernel_xiaomi_whyred",
+        "target_path"	: "kernel/xiaomi/whyred",
+        "branch"		: "kernel-eas"
     },
     {
-        "remote":       "github",
-        "repository":   "MocaRafee/vendor_xiaomi_whyred",
-        "target_path":  "vendor/xiaomi/whyred",
-	    "branch":	"ten"
+        "remote"		: "github",
+        "repository"	: "MocaRafee/vendor_xiaomi_whyred",
+        "target_path"	: "vendor/xiaomi/whyred",
+	    "branch"		: "ten"
     },
 	{
 		"remote"		: "priv",
@@ -25,15 +30,15 @@
 	},
 	{
 		"remote"		: "github",
-		"repository": "LineageOS/android_vendor_qcom_opensource_fm-commonsys",
-		"target_path": "vendor/qcom/opensource/fm-commonsys"
+		"repository"	: "LineageOS/android_vendor_qcom_opensource_fm-commonsys",
+		"target_path"	: "vendor/qcom/opensource/fm-commonsys"
 		"branch"		: "lineage-17.1",
 	},
     {
-        "remote":       "github",
-        "repository":   "MocaRafee/vendor_MiuiCamera",
-        "target_path":  "vendor/MiuiCamera",
-        "branch":     "10.x"
+        "remote"		: "github",
+        "repository"	: "MocaRafee/vendor_MiuiCamera",
+        "target_path"	: "vendor/MiuiCamera",
+        "branch"		: "10.x"
     }
 
 ]

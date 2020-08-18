@@ -35,6 +35,9 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
+# Some bloatware
+$(call inherit-product-if-exists, device/bloatware/config.mk)
+
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 IS_PHONE := true
