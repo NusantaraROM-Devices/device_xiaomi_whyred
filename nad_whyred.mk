@@ -40,8 +40,6 @@ $(call inherit-product-if-exists, device/bloatware/config.mk)
 $(call inherit-product, device/xiaomi/meme/config.mk)
 -include device/xiaomi/meme/meme.mk
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 IS_PHONE := true
 
 PRODUCT_NAME := nad_whyred
