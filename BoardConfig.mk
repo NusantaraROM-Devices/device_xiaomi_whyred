@@ -23,6 +23,9 @@
 
 DEVICE_PATH := device/xiaomi/whyred
 
+# Meme parts
+-include vendor/meme/meme.mk
+
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
@@ -64,7 +67,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := whyred-newcam_defconfig
+TARGET_KERNEL_CONFIG := whyred_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM

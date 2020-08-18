@@ -37,8 +37,6 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Some bloatware & meme parts
 $(call inherit-product-if-exists, device/bloatware/config.mk)
-$(call inherit-product, device/xiaomi/meme/config.mk)
--include device/xiaomi/meme/meme.mk
 
 IS_PHONE := true
 

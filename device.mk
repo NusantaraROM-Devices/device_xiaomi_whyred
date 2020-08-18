@@ -23,6 +23,9 @@
 
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
 
+# Meme parts
+$(call inherit-product, vendor/meme/config.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -407,7 +410,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     fstab.qcom \
-    init.qti.can.sh
+    init.qti.can.sh \
+	init.xiaomi_parts.rc
 
 # RCS
 PRODUCT_PACKAGES += \
