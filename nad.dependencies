@@ -5,6 +5,7 @@
         "target_path"	: "device/xiaomi/meme",
         "branch"		: "memeparts"
     },
+	{
     	"remote"	    : "github",
     	"repository"	: "MocaRafee/device_bloatware",
     	"target_path"	: "device/bloatware",
@@ -27,12 +28,6 @@
 		"repository"	: "android_packages_apps_NusantaraParts",
 		"target_path"	: "packages/apps/NusantaraParts",
 		"branch"		: "4.4"
-	},
-	{
-		"remote"		: "github",
-		"repository"	: "LineageOS/android_vendor_qcom_opensource_fm-commonsys",
-		"target_path"	: "vendor/qcom/opensource/fm-commonsys"
-		"branch"		: "lineage-17.1"
 	},
     {
         "remote"		: "github",
