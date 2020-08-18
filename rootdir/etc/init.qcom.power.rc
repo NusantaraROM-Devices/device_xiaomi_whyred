@@ -62,6 +62,10 @@ on init
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 1113600
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rtg_boost_freq 0
 
+    # Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on boot
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
