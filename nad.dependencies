@@ -1,9 +1,9 @@
 [
     {
-        "remote"		: "priv",
-        "repository"	: "aandroid_device_xiaomi_sdm660-common",
-        "target_path"	: "device/xiaomi/sdm660-common",
-        "branch"		: "meme"
+        "remote"		: "ghpriv",
+        "repository"	: "MocaRafee/aandroid_device_xiaomi_sdm660-common",
+        "target_path"	: "device/xiaomi/meme",
+        "branch"		: "memeparts"
     },
     	"remote"	    : "github",
     	"repository"	: "MocaRafee/device_bloatware",
@@ -32,13 +32,13 @@
 		"remote"		: "github",
 		"repository"	: "LineageOS/android_vendor_qcom_opensource_fm-commonsys",
 		"target_path"	: "vendor/qcom/opensource/fm-commonsys"
-		"branch"		: "lineage-17.1",
+		"branch"		: "lineage-17.1"
 	},
     {
         "remote"		: "github",
-        "repository"	: "MocaRafee/vendor_MiuiCamera",
+        "repository"	: "fakeyatogod/MiuiCamera",
         "target_path"	: "vendor/MiuiCamera",
-        "branch"		: "10.x"
+        "branch"		: "cr-8.0"
     }
 
 ]

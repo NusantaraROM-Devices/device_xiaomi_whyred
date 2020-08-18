@@ -35,8 +35,10 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Some bloatware
+# Some bloatware & meme parts
 $(call inherit-product-if-exists, device/bloatware/config.mk)
+$(call inherit-product, device/xiaomi/meme/config.mk)
+-include device/xiaomi/meme/meme.mk
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
