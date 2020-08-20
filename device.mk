@@ -30,9 +30,6 @@ $(call inherit-product, vendor/meme/config.mk)
 -include $(LOCAL_PATH)/vendor_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-# Dirac
-$(call inherit-product, vendor/dirac/dirac.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \

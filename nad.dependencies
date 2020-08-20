@@ -31,12 +31,6 @@
 	},
     {
         "remote"		: "github",
-        "repository"	: "MocaRafee/vendor_dirac",
-        "target_path"	: "vendor/dirac",
-        "branch"		: "ten"
-    },
-    {
-        "remote"		: "github",
         "repository"	: "MocaRafee/MiuiCamera",
         "target_path"	: "vendor/MiuiCamera",
         "branch"		: "cr-8.0"
