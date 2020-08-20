@@ -25,12 +25,6 @@
     },
     {
         "remote"	    : "github",
-        "repository"	: "theradcolor/aarch64-linux-gnu",
-        "target_path"	: "compiler/gcc-10.1.0",
-	    "branch"	    : "aarch64-linux-gnu-10.1.0"
-    },
-    {
-        "remote"	    : "github",
         "repository"	: "MocaRafee/vendor_MiuiCamera",
         "target_path"	: "vendor/MiuiCamera",
         "branch"	    : "10.x"
@@ -39,7 +33,7 @@
 		"remote"		: "priv",
 		"repository"	: "android_packages_apps_NusantaraParts",
 		"target_path"	: "packages/apps/NusantaraParts",
-		"branch"		: "4.4-NoDirac"
+		"branch"		: "4.4"
 	},
     {
     	"remote"	    : "priv",
