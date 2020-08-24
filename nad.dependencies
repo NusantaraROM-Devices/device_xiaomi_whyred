@@ -21,7 +21,7 @@
         "remote"	    : "ghpriv",
         "repository"	: "MocaRafee/proprietary_vendor_xiaomi_",
         "target_path"	: "vendor/xiaomi",
-	    "branch"	    : "ten"
+	    "branch"	    : "nad_10"
     },
     {
         "remote"	    : "github",
