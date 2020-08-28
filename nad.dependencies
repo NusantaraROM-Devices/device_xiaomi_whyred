@@ -13,9 +13,9 @@
     },
     {
         "remote"	    : "github",
-        "repository"	: "theradcolor/android_kernel_xiaomi_whyred",
+        "repository"	: "MocaRafee/ExtendedKernel-Whyred",
         "target_path"	: "kernel/xiaomi/sdm660",
-        "branch"	    : "kernel-eas"
+        "branch"	    : "extended-eas"
     },
     {
         "remote"	    : "ghpriv",
@@ -28,6 +28,12 @@
         "repository"	: "MocaRafee/vendor_MiuiCamera",
         "target_path"	: "vendor/MiuiCamera",
         "branch"	    : "10.x"
+    },
+    {
+        "remote"	    : "github",
+        "repository"	: "silont-project/silont-clang",
+        "target_path"	: "prebuilts/clang/host/linux-x86/clang-silont",
+        "branch"	    : "master"
     },
 	{
 		"remote"		: "priv",
