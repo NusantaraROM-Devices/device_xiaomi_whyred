@@ -2312,8 +2312,8 @@
 
     <path name="voice-headset">
         <path name="headphones" />
-        <ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="86" />
+        <ctl name="RX2 Digital Volume" value="86" />
     </path>
 
     <path name="voice-headset-mic">
