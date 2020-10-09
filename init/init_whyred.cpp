@@ -36,6 +36,8 @@
 #include <android-base/strings.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -47,6 +49,40 @@ using android::base::Trim;
 
 string heapstartsize, heapgrowthlimit, heapsize,
        heapminfree, heapmaxfree, heaptargetutilization;
+
+/* From Magisk@jni/magiskhide/hide_utils.c */
+static const char *snet_prop_key[] = {
+	"ro.boot.vbmeta.device_state",
+	"ro.boot.verifiedbootstate",
+	"ro.boot.flash.locked",
+	"ro.boot.selinux",
+	"ro.boot.veritymode",
+	"ro.boot.warranty_bit",
+	"ro.warranty_bit",
+	"ro.debuggable",
+	"ro.secure",
+	"ro.build.type",
+	"ro.build.tags",
+	"ro.build.selinux",
+	NULL
+};
+
+static const char *snet_prop_value[] = {
+	"locked",
+	"green",
+	"1",
+	"enforcing",
+	"enforcing",
+	"0",
+	"0",
+	"0",
+	"1",
+	"user",
+	"release-keys",
+	"1",
+	NULL
+};
+
 
 void property_override(string prop, string value)
 {
@@ -76,6 +112,17 @@ void property_override_dual(char const system_prop[],
     property_override(vendor_prop, value);
 }
 
+static void workaround_snet_properties() {
+
+	// Hide all sensitive props
+	for (int i = 0; snet_prop_key[i]; ++i) {
+		property_override(snet_prop_key[i], snet_prop_value[i]);
+	}
+
+	chmod("/sys/fs/selinux/enforce", 0640);
+	chmod("/sys/fs/selinux/policy", 0440);
+}
+
 void vendor_load_properties()
 {
    std::string product = GetProperty("ro.product.vendor.device", "");	
@@ -96,4 +143,7 @@ void vendor_load_properties()
         property_override_dual("ro.product.vendor.model", "persist.vendor.camera.exif.model", "Redmi Note 5 Pro");
 	}
   }
+
+	// Workaround SafetyNet
+	workaround_snet_properties();
 }
