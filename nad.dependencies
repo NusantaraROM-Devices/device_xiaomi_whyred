@@ -13,7 +13,7 @@
    },
    {
       "remote":"github",
-      "repository":"attack11/Whyred",
+      "repository":"MocaRafee/ExtendedKernel-Whyred",
       "target_path":"kernel/xiaomi/sdm660",
       "branch":"extended-eas"
    },
