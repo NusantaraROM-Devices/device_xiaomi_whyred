@@ -23,7 +23,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ov13855_sunny.light.lux=370 \
     persist.vendor.ov13855_sunny.low.lux=385 \
     persist.vendor.s5k3l8_ofilm.light.lux=367 \
-    persist.vendor.s5k3l8_ofilm.low.lux=379
+    persist.vendor.s5k3l8_ofilm.low.lux=379 \
+    persist.vendor.camera.fdvideo=1 \
+    persist.vendor.camera.awb.sync=2 \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.btpn.dc,com.telkom.tracencare \
