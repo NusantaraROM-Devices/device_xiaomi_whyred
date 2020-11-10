@@ -28,7 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.awb.sync=2 \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.btpn.dc,com.telkom.tracencare \
+    vendor.camera.hal1.packagelist=com.intsig.camscanner,com.btpn.dc,com.telkom.tracencare \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera
 
 # Display
