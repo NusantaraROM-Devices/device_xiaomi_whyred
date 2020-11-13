@@ -15,7 +15,7 @@
       "remote":"github",
       "repository":"MocaRafee/ExtendedKernel-Whyred",
       "target_path":"kernel/xiaomi/sdm660",
-      "branch":"extended-eas"
+      "branch":"xt-eas"
    },
    {
       "remote":"ghpriv",
