@@ -26,13 +26,11 @@ $(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
 NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
+PRODUCT_PACKAGES += \
+    Dirac
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    NusantaraPapers
 	
 # Some bloatware
 $(call inherit-product-if-exists, device/bloatware/config.mk)
