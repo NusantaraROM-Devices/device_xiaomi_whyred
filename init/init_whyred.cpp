@@ -145,7 +145,7 @@ void vendor_load_properties()
   }
 
 	// Workaround SafetyNet
-    property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.product.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
+    property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RD1A.201105.003.C1/6886399:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.product.build.fingerprint", "google/redfin/redfin:11/RD1A.201105.003.C1/6886399:user/release-keys");
     workaround_snet_properties();
 }
