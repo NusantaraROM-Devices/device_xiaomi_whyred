@@ -30,6 +30,12 @@
       "branch":"10.x"
    },
    {
+      "remote":"github",
+      "repository":"silont-project/silont-clang",
+      "target_path":"prebuilts/clang/host/linux-x86/clang-silont",
+      "branch":"master"
+   },
+   {
       "remote":"priv",
       "repository":"android_packages_apps_NusantaraParts",
       "target_path":"packages/apps/NusantaraParts",
