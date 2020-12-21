@@ -1,0 +1,20 @@
+[
+   {
+      "remote":"ghpriv",
+      "repository":"MocaRafee/aandroid_device_xiaomi_sdm660-common",
+      "target_path":"device/xiaomi/sdm660-common",
+      "branch":"nad10-skl"
+   },
+   {
+      "remote":"priv",
+      "repository":"android_packages_apps_NusantaraParts",
+      "target_path":"packages/apps/NusantaraParts",
+      "branch":"4.4"
+   },
+   {
+      "remote":"priv",
+      "repository":"android_packages_apps_NusantaraPapers",
+      "target_path":"packages/apps/NusantaraPapers",
+      "branch":"10"
+   }
+]

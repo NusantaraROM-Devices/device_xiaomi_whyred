@@ -63,7 +63,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-pe
+    $(DEVICE_PATH)/overlay-nad
 
 # Ramdisk
 PRODUCT_PACKAGES += \
