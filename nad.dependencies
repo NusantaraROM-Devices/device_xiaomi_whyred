@@ -3,7 +3,7 @@
       "remote":"ghpriv",
       "repository":"MocaRafee/aandroid_device_xiaomi_sdm660-common",
       "target_path":"device/xiaomi/sdm660-common",
-      "branch":"nad10-skl"
+      "branch":"nad_10_last"
    },
    {
       "remote":"priv",
