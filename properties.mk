@@ -26,6 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.s5k3l8_ofilm.low.lux=379 \
     persist.vendor.camera.fdvideo=1 \
     persist.vendor.camera.awb.sync=2 \
+    persist.vendor.camera.enableAdvanceFeatures=0x347 \
+    persist.camera.max.previewfps=60 \
+    persist.vendor.camera.max.previewfps=60
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.intsig.camscanner,com.btpn.dc,com.telkom.tracencare \
