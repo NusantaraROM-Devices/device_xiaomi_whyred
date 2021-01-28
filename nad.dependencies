@@ -9,7 +9,7 @@
       "remote":"priv",
       "repository":"android_packages_apps_NusantaraParts",
       "target_path":"packages/apps/NusantaraParts",
-      "branch":"4.4"
+      "branch":"4.4-10L"
    },
    {
       "remote":"priv",
