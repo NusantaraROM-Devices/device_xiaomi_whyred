@@ -6,36 +6,6 @@
       "branch":"nad_11_easLos"
    },
    {
-      "remote":"github",
-      "repository":"MocaRafee/device_bloatware",
-      "target_path":"device/bloatware",
-      "branch":"whyred"
-   },
-   {
-      "remote":"github",
-      "repository":"MocaRafee/ExtendedKernel-Whyred",
-      "target_path":"kernel/xiaomi/sdm660",
-      "branch":"xt-eas"
-   },
-   {
-      "remote":"ghpriv",
-      "repository":"MocaRafee/proprietary_vendor_xiaomi_",
-      "target_path":"vendor/xiaomi",
-      "branch":"nad_11_broken"
-   },
-   {
-      "remote":"github",
-      "repository":"MocaRafee/vendor_MiuiCamera",
-      "target_path":"vendor/MiuiCamera",
-      "branch":"10.x"
-   },
-   {
-      "remote":"github",
-      "repository":"GengKapak/GengKapak-clang",
-      "target_path":"prebuilts/clang/host/linux-x86/clang-gengkapak",
-      "branch":"main"
-   },
-   {
       "remote":"priv",
       "repository":"android_packages_apps_NusantaraParts",
       "target_path":"packages/apps/NusantaraParts",
