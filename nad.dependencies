@@ -9,7 +9,7 @@
       "remote":"github",
       "repository":"MocaRafee/device_bloatware",
       "target_path":"device/bloatware",
-      "branch":"11_w"
+      "branch":"whyred"
    },
    {
       "remote":"github",
