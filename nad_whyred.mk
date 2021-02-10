@@ -29,6 +29,7 @@ TARGET_USES_BLUR := true
 USE_PIXEL_CHARGING := true
 PRODUCT_PACKAGES += \
     Dirac
+USE_AOSP_CLOCK := true
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
