@@ -29,6 +29,7 @@ USE_PIXEL_CHARGING := true
 # Build Dirac
 PRODUCT_PACKAGES += \
     Dirac
+USE_AOSP_CLOCK := true
 
 # Some bloatware
 $(call inherit-product-if-exists, device/bloatware/config.mk)
