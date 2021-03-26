@@ -28,7 +28,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGING := true
 # Build Dirac
 PRODUCT_PACKAGES += \
-    Dirac
+    Dirac \
+	NusantaraPapers
 USE_AOSP_CLOCK := true
 
 # Some bloatware
