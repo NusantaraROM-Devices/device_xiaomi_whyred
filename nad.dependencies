@@ -13,6 +13,12 @@
    },
    {
       "remote":"priv",
+      "repository":"android_packages_apps_NusantaraPapers",
+      "target_path":"packages/apps/NusantaraPapers",
+      "branch":"11"
+   },
+   {
+      "remote":"priv",
       "repository":"android_packages_apps_Dirac",
       "target_path":"packages/apps/Dirac",
       "branch":"10"

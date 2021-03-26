@@ -28,7 +28,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
 USE_PIXEL_CHARGING := true
 PRODUCT_PACKAGES += \
-    Dirac
+    Dirac \
+	NusantaraPapers
 USE_AOSP_CLOCK := true
 
 # Inherit from whyred device
