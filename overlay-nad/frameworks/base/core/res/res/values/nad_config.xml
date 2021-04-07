@@ -32,4 +32,5 @@
     <!-- Should we filter any display modes which are unmapped? -->
     <bool name="config_filterDisplayModes">true</bool>
 	
+    <bool name="config_defaultCABC">false</bool>
 </resources>
