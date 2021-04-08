@@ -52,6 +52,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := whyred
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.2010305.007 7124944 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210405.005 7181113 release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210305.007/7124944:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
