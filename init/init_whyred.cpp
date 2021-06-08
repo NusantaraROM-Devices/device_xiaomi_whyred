@@ -96,7 +96,7 @@ void vendor_load_properties()
         property_override_dual("ro.product.vendor.model", "persist.vendor.camera.exif.model", "Redmi Note 5 Pro");
 	}
   }
-    property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.product.build.fingerprint", "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys");
+    property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.product.build.fingerprint", "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys");
 }
 
