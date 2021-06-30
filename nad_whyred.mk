@@ -38,11 +38,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Some bloatware
 $(call inherit-product-if-exists, device/bloatware/config.mk)
 
-# AOT Preload
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    NexusLauncherRelease
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
