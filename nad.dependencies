@@ -12,12 +12,6 @@
       "branch":"4.4-11L"
    },
    {
-      "remote":"priv",
-      "repository":"android_packages_apps_Dirac",
-      "target_path":"packages/apps/Dirac",
-      "branch":"10"
-   },
-   {
       "remote":"github",
       "repository":"MocaRafee/android_packages_apps_SnapdragonMusic",
       "target_path":"packages/apps/SnapdragonMusic",
