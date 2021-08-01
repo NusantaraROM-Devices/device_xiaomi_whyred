@@ -34,9 +34,6 @@ USE_AOSP_CLOCK := true
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 	
-# Some bloatware
-$(call inherit-product-if-exists, device/bloatware/config.mk)
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
