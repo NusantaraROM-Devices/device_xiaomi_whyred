@@ -28,7 +28,8 @@ BOARD_HAVE_QCOM_FM := true
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0.vendor
 
 # HW crypto
 PRODUCT_PACKAGES += \
@@ -37,7 +38,8 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
