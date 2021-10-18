@@ -200,3 +200,6 @@ ro.vendor.sensors.dev_ori=true
 ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
+
+# Disable binary xml
+persist.sys.binary_xml=false
