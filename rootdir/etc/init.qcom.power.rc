@@ -25,6 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on early-init
+    write /proc/sys/kernel/sched_boost 1
+
 on init
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 10
@@ -52,7 +55,7 @@ on init
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 0
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1401600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 633600
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rtg_boost_freq 902400
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rtg_boost_freq 0
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor "schedutil"
@@ -95,17 +98,12 @@ on enable-low-power
     # Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
 
-    # Set the default IRQ affinity to the primary cluster. When a
-    # CPU is isolated/hotplugged, the IRQ affinity is adjusted
-    # to one of the CPU from the default IRQ affinity mask.
-    write /proc/irq/default_smp_affinity f
-
-    # Core control parameters on big
+    # Core control parameters
+    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
     write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 2
     write /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres 60
-    write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 30
+    write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 40
     write /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms 100
-    write /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster 1
     write /sys/devices/system/cpu/cpu4/core_ctl/task_thres 4
 
     # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
@@ -121,10 +119,10 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load 85
 
     # Setting b.L scheduler parameters
-    write /proc/sys/kernel/sched_upmigrate 96
-    write /proc/sys/kernel/sched_downmigrate 90
-    write /proc/sys/kernel/sched_group_upmigrate 140
-    write /proc/sys/kernel/sched_group_downmigrate 120
+    write /proc/sys/kernel/sched_upmigrate 77
+    write /proc/sys/kernel/sched_downmigrate 67
+    write /proc/sys/kernel/sched_group_upmigrate 100
+    write /proc/sys/kernel/sched_group_downmigrate 85
     write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
 
     write /sys/block/mmcblk0/bdi/read_ahead_kb 128
@@ -139,8 +137,8 @@ on enable-low-power
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/mbps_zones "762 1571 2086 2929 3879 5163 5931 6881"
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/sample_ms 4
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/io_percent 85
-    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/decay_rate 100
-    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/bw_step 50
+    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/decay_rate 90
+    write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/bw_step 190
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory 20
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_length 0
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/down_thres 80
@@ -153,6 +151,9 @@ on enable-low-power
     # Set cpuset parameters
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
+
+    # Turn off scheduler boost at the end
+    write /proc/sys/kernel/sched_boost 0
 
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
