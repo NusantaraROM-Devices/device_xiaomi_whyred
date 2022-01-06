@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-pe
+    $(DEVICE_PATH)/overlay-nad
 
 # Powerhint
 EAS_POWERHINT_VARIANT := sdm636
