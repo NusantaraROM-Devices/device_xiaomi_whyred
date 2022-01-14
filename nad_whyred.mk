@@ -18,6 +18,7 @@ USE_PIXEL_CHARGING := true
 PRODUCT_PACKAGES += \
     SnapdragonMusic
 USE_AOSP_CLOCK := true
+USE_GAPPS=true
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
