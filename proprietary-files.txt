@@ -872,9 +872,10 @@ system_ext/lib64/vendor.qti.hardware.fm@1.0.so|a91ac4f777a81224e3be78561d29bdaa2
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|f23a4efc7baa2bcab560e8fda02b9afad3e82d51
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|ee02e7e7a7c474822f575fc76eb3fe6205ffde53
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.sdm660.so
-vendor/lib64/hw/gatekeeper.sdm660.so
+# Gatekeeper - from S62Pro RKQ1.210406.002
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|ea711a5b351b2d70f42a923ed061f3a827982b94
 
 # GPS - from ginkgo V12.5.1.0.RCOCNXM
 vendor/bin/garden_app|4f61dffac228425593cb5c108cb02b28a5f37c72
@@ -989,11 +990,11 @@ vendor/firmware/a540_gpmu.fw2
 vendor/bin/msm_irqbalance|dd8e65dae1f2f8ec1beb72f7115621f301eab85d
 
 # Keymaster - from S62Pro RKQ1.210406.002
-vendor/lib64/libkeymasterdeviceutils.so|6fd0b0e1b30c4e6c5272794896306596880c657b
-
-# Keystore
-vendor/lib/hw/keystore.sdm660.so
-vendor/lib64/hw/keystore.sdm660.so
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|002c638011b1936fecaa896874d3361ec68eaa46
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|ce2b3776fb2e69f893cab0c2fda751b493b1a7be
+vendor/lib64/libkeymasterdeviceutils.so|f76a5953de33a6937b07e34bf8686b156bd018fd
+vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
 
 # Listen - from S62Pro RKQ1.210406.002
 vendor/lib/hw/sound_trigger.primary.sdm660.so|5464b9658c9b819e18f3ad6703471278521a79d1
