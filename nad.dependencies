@@ -1,0 +1,27 @@
+[{
+		"remote": "device",
+		"repository": "device_xiaomi_whyred-common",
+		"target_path": "device/xiaomi/sdm660-common"
+	},
+	{
+		"remote": "github",
+		"repository": "Mocaness/WhyredKernel",
+		"target_path": "kernel/xiaomi/whyred",
+		"branch": "twelve",
+		"clone-depth": "1"
+	},
+	{
+		"remote": "github",
+		"repository": "Mocaness/device_xiaomi_whyred-kernel",
+		"target_path": "device/xiaomi/whyred-kernel",
+		"branch": "twelve",
+		"clone-depth": "1"
+	},
+	{
+		"remote": "device",
+		"repository": "vendor_xiaomi_whyred",
+		"branch": "12-wip",
+		"target_path": "vendor/xiaomi",
+		"clone-depth": "1"
+	}
+]
