@@ -23,5 +23,12 @@
 		"branch": "12-wip",
 		"target_path": "vendor/xiaomi",
 		"clone-depth": "1"
+	},
+	{
+		"remote": "github",
+		"repository": "dns24/vendor_MiuiCamera",
+		"branch": "master",
+		"target_path": "vendor/MiuiCamera",
+		"clone-depth": "1"
 	}
 ]
