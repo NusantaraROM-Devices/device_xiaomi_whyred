@@ -190,6 +190,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@1.1
 
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hardware.vulkan=adreno \
+ro.hardware.egl=adreno 
+
 # Doze
 # PRODUCT_PACKAGES += \
 #    XiaomiDoze
