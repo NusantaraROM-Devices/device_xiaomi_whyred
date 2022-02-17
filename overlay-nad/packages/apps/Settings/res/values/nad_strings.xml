@@ -12,6 +12,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="maintainer_name">attack_dns24|Moca</string>
+    <!-- Overlay for maintainer --> 
+    <string name="github_username">dns24</string> 
+    <string name="maintainer_name">ʜᴇᴇᴅ</string>
+    <string name="telegram_username">attack_dns24</string>
 
 </resources>
