@@ -7,14 +7,14 @@
 		"remote": "github",
 		"repository": "Mocaness/WhyredKernel",
 		"target_path": "kernel/xiaomi/whyred",
-		"branch": "twelve",
+		"branch": "minimal",
 		"clone-depth": "1"
 	},
 	{
 		"remote": "github",
 		"repository": "Mocaness/device_xiaomi_whyred-kernel",
 		"target_path": "device/xiaomi/whyred-kernel",
-		"branch": "twelve",
+		"branch": "minimal",
 		"clone-depth": "1"
 	},
 	{
