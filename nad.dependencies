@@ -1,4 +1,5 @@
-[{
+[
+        {
 		"remote": "device",
 		"repository": "device_xiaomi_whyred-common",
 		"target_path": "device/xiaomi/sdm660-common"
@@ -23,7 +24,14 @@
 		"branch": "12-wip",
 		"target_path": "vendor/xiaomi",
 		"clone-depth": "1"
-	},
+	},        
+        {
+                "remote": "github",
+                "repository": "MocaRafee/vendor_dirac",
+                "branch": "12",
+                "target_path": "vendor/dirac",
+                "clone-depth": "1"
+        },
 	{
 		"remote": "github",
 		"repository": "dns24/vendor_MiuiCamera",
