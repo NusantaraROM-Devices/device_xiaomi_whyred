@@ -190,8 +190,8 @@ ro.hardware.vulkan=adreno \
 ro.hardware.egl=adreno 
 
 # Doze
-# PRODUCT_PACKAGES += \
-#    XiaomiDoze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
