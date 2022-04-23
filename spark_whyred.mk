@@ -14,8 +14,8 @@ ifneq ($(WITH_GAPPS),true)
     $(call inherit-product, vendor/PixelMod/PixelMod.mk)
 endif
 
-# Inherit some common Dot stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Spark stuff
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := dot_whyred
+PRODUCT_NAME := spark_whyred
 PRODUCT_MODEL := Redmi Note 5 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -36,11 +36,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_BLUR := true
-TARGET_SUPPORTS_FACE_UNLOCK := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_GAPPS_ARCH :=arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true

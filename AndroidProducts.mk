@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_whyred.mk
+    $(LOCAL_DIR)/spark_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_whyred-user \
-    dot_whyred-userdebug \
-    dot_whyred-eng
+    spark_whyred-user \
+    spark_whyred-userdebug \
+    spark_whyred-eng
