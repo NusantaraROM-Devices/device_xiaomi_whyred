@@ -17,3 +17,6 @@ allow init vendor_power_prop:file{
   write
   map
   read };
+  
+# Allow init to wrtie to sysfs_battery_supply
+allow init sysfs_battery_supply:file { setattr };

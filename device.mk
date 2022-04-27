@@ -20,7 +20,8 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay 
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-spark
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
