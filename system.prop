@@ -3,3 +3,8 @@ ro.spark.device.name=Redmi Note 5 Pro
 ro.spark.group.url=https://t.me/+sr5cm3P1gQgwMDA9
 ro.spark.maintainer=Pranshu Goyal
 ro.spark.maintainer.username=datnerdguy
+
+# Blurs
+ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1
