@@ -16,5 +16,11 @@
       "repository":"android_packages_apps_NusantaraPapers",
       "target_path":"packages/apps/NusantaraPapers",
       "branch":"10"
+   },
+   {
+      "remote":"priv",
+      "repository":"NusantaraROM-Devices/vendor_xiaomi_whyred",
+      "target_path":"vendor/xiaomi",
+      "branch":"10-wip"
    }
 ]
