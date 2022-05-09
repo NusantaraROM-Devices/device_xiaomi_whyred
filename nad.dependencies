@@ -22,5 +22,19 @@
       "repository":"NusantaraROM-Devices/vendor_xiaomi_whyred",
       "target_path":"vendor/xiaomi",
       "branch":"10-wip"
+   },
+   {
+      "remote": "github",
+      "repository": "MocaRafee/vendor_dirac",
+      "branch": "10.x",
+      "target_path": "vendor/dirac",
+      "clone-depth": "1"
+   },
+   {
+      "remote": "github",
+      "repository": "dns24/vendor_MiuiCamera",
+      "branch": "master",
+      "target_path": "vendor/MiuiCamera",
+      "clone-depth": "1"
    }
 ]
