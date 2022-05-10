@@ -1,3 +1,5 @@
+![Xiaomi Redmi Note 5 Pro](https://raw.githubusercontent.com/datnerdguy/assets/main/whyred-poster.png)
+
 The Redmi Note 5 Pro (codenamed _"whyred"_) are high-end mid-range smartphones from Xiaomi announced and released in March 2018.
 
 ## Device specifications
@@ -16,10 +18,6 @@ The Redmi Note 5 Pro (codenamed _"whyred"_) are high-end mid-range smartphones f
 | Rear camera 1           | 12MP, 1.25-micron pixels, f/2.2 Dual LED flash               |
 | Rear camera 2           | 5MP, 1.12-micron pixels, f/2.0                               |
 | Front camera            | 20MP, 1-micron pixels, f/2.2 1080p 30 fps video, Selfie-light|
-
-## Device picture
-
-![Xiaomi Redmi Note 5 Pro](https://www1-lw.xda-cdn.com/files/2018/02/Xiaomi-Redmi-Note-5-and-Redmi-Note-5-Pro-Forums-now-Open.png)
 
 ## Copyright
 
