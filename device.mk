@@ -370,7 +370,7 @@ PRODUCT_COPY_FILES += \
 
 # Remove Packages
 PRODUCT_PACKAGES += \
-    RemovePackages
+    Nuker
 
 # RIL
 PRODUCT_PACKAGES += \
