@@ -54,6 +54,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib/libMiWatermark.so)
+            "${PATCHELF}" --add-needed "libmiwatermark_shim.so" "${2}"
+            ;;
     esac
 }
 

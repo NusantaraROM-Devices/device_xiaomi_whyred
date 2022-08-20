@@ -682,7 +682,7 @@ vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii.so|e7584a6ba94f89b041dd387308c5dcc
 vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii_eeprom.so|e4690626f9e5a92ecc654a25532bdd9cec0da255
 
 # Camera watermark - from jasmine V11.0.8.0.QDIMIXM
-vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
+vendor/lib/libMiWatermark.so|2987b87f6294b6b4e29f610cb1b47fe460bac8a1
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 
 # Charger - from S62Pro RKQ1.210406.002
