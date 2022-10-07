@@ -3,6 +3,6 @@
         "remote": "devices",
         "repository": "android_vendor_xiaomi_whyred",
         "target_path": "vendor/xiaomi/whyred",
-        "branch": "spark"
+        "branch": "pyro"
     }
 ]
