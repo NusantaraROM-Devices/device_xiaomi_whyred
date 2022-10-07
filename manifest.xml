@@ -336,6 +336,6 @@
         <fqname>@1.0::IUsb/default</fqname>
     </hal>
     <sepolicy>
-        <version>32.0</version>
+        <version>33.0</version>
     </sepolicy>
 </manifest>
