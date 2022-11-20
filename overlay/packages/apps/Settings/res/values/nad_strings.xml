@@ -1,0 +1,6 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Overlay for maintainer --> 
+    <string name="maintainer_name">Wahid Nursidik</string>
+    <string name="github_username">dns24</string> 
+    <string name="telegram_username">attack_dns24</string>
+</resources>
