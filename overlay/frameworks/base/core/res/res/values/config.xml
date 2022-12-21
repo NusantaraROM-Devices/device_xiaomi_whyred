@@ -265,7 +265,6 @@
         <item>"evdo:4094,87380,524288,4096,16384,262144"</item>
     </string-array>
 
-
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
     <!--  Whether Multiuser UI should be shown -->
@@ -329,4 +328,13 @@
         <!-- ID0:Fingerprint:Strong -->
         <item>0:2:15</item>
     </string-array>
+     
+    <!-- System Info -->
+    <bool name="config_supportSystemInfo">true</bool>
+    <string name="config_sysCPUTemp">"/sys/class/thermal/thermal_zone0/temp"</string>
+    <string name="config_sysBatteryTemp">"/sys/class/power_supply/battery/temp"</string>
+    <string name="config_sysGPUFreq">"/sys/kernel/gpu/gpu_clock"</string>
+    <string name="config_sysGPULoad">"/sys/kernel/gpu/gpu_busy"</string>
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
 </resources>
