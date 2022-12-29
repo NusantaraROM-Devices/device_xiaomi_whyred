@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_whyred.mk
+    $(LOCAL_DIR)/nad_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_whyred-user \
-    spark_whyred-userdebug \
-    spark_whyred-eng
+    nad_whyred-user \
+    nad_whyred-userdebug \
+    nad_whyred-eng
