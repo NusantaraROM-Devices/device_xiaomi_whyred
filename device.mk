@@ -217,10 +217,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# Gcam
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
