@@ -15,9 +15,11 @@ $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Pixel Offline Charging Animation
+USE_PIXEL_CHARGING := true
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
