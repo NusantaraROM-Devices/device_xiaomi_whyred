@@ -772,6 +772,11 @@ vendor/lib64/vendor.qti.latency@2.0.so|dfec90dd5d12f653bb6067702682b5f610a83b67
 # Consumerir
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
 
+# Dirac
+vendor/etc/diracmobile.config
+vendor/lib/soundfx/libdirac.so
+vendor/lib/libDiracAPI_SHARED.so
+
 # DPM - from ginkgo V12.5.1.0.RCOCNXM
 system_ext/bin/dpmd|0f22b5229c85007681abd3f6d81a41a7f32462a7
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
